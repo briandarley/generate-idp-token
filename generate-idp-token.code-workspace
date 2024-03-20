@@ -1,0 +1,11 @@
+{
+  "folders": [
+    {
+      "path": "."
+    }
+  ],
+  "settings": {
+    "dotnetAcquisitionExtension.existingDotnetPath": [],
+    "dotnet.server.extensionPaths": []
+  }
+}
