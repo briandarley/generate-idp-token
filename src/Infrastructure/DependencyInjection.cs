@@ -60,7 +60,11 @@ public static class DependencyInjection
                 idpConfig = idpConfigurations.Single(c => c.Name == "UAT_IDP");
                 idpConfig.ClientId = configuration["UAT_IDP:CLIENT_ID"] ?? Environment.GetEnvironmentVariable("UAT_IDP:CLIENT_ID");
                 idpConfig.ClientSecret = configuration["UAT_IDP:CLIENT_SECRET"] ?? Environment.GetEnvironmentVariable("UAT_IDP:CLIENT_SECRET");
-
+                break;
+            case "TST":
+                idpConfig = idpConfigurations.Single(c => c.Name == "TST_IDP");
+                idpConfig.ClientId = configuration["TST_IDP:CLIENT_ID"] ?? Environment.GetEnvironmentVariable("TST_IDP:CLIENT_ID");
+                idpConfig.ClientSecret = configuration["TST_IDP:CLIENT_SECRET"] ?? Environment.GetEnvironmentVariable("TST_IDP:CLIENT_SECRET");
 
 
                 break;
